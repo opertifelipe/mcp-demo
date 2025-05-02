@@ -1,0 +1,16 @@
+{
+    "servers": {
+        "somma": {
+            "type": "stdio",
+            "command": "/home/felipe/.local/bin/uv",
+            "args": [
+                "run",
+                "--with",
+                "mcp",
+                "/home/felipe/Projects/personal/mcp-demo/.venv/bin/mcp",
+                "run",
+                "/home/felipe/Projects/personal/mcp-demo/server.py"
+            ]
+        }
+    }
+}
