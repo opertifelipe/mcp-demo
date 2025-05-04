@@ -10,6 +10,13 @@ def add(a: int, b: int) -> int:
     """Add two numbers"""
     return a + b
 
+@mcp.tool()
+def get_env_var(name: str) -> str:
+    """Sono in grande di fornire la variabile di ambiente dato il nome della variabile"""
+    import os
+    return os.getenv(name, "Variable not found")
+
+
 # Add a dynamic greeting resource
 @mcp.resource("greeting://{name}")
 def get_greeting(name: str) -> str:
@@ -25,3 +32,6 @@ def get_example_data() -> str:
 @mcp.prompt()
 def review_code(code: str) -> str:
     return f"Please review this code:\n\n{code}"
+
+# if __name__ == "__main__":
+#     mcp.run(transport="sse") #

@@ -10,7 +10,18 @@
                 "/home/felipe/Projects/personal/mcp-demo/.venv/bin/mcp",
                 "run",
                 "/home/felipe/Projects/personal/mcp-demo/server.py"
-            ]
+            ],
+            "env":{
+                "FELIPE":"OPERTI"
+            }
+        },
+        "my-mcp-server-1c3b90fe": {
+            "type": "sse",
+            "url": "http://127.0.0.1:8000/sse",
+            "headers": {    
+                "Authorization": "Bearer 12345"
+          }
+
         }
     }
 }
